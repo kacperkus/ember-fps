@@ -55,7 +55,7 @@ Now check if Ember works:
 
 <code>ember -v</code>
 
-If you had to install Ember with sudo, you'll probably have to use it also with ember-cli. That's confusing (especially that we'll be using bower). But first things first.
+If you had to install Ember with sudo, you'll probably have to use it also with ember-cli. That's confusing (especially because we'll be using bower). But first things first.
 
 If you see something like:
 <code>version: 1.13.13</code>
@@ -135,7 +135,17 @@ Between h2 tags there is a "Welcome to Ember" string. Replace it with your own n
 
 Go back to your browser. Did you see it? Our app has auto-refreshed and now you can see your name. That's great, isn't it?
 
-Add something more. Create new div (you can use HTML syntax as well as CSS class/id keyword):
+For now leave application.hbs file empty (except {{outlet}} handlebar).
+
+<b>Index</b>
+
+It's high time to generate a route!
+
+<code>ember generate route index</code>
+
+That's a special route because it refers to the home page of the app. Later I'll explain you what exactly Ember's generator creates. Promise!
+
+Now go to index.hbs template inside templates folder (app/templates/index.hbs). Next, create a new div (you can use HTML syntax as well as CSS class/id keyword):
 
 <code>\<div class="namespace"\>\</div></code>
 
@@ -155,11 +165,14 @@ And inside it add a paragraph with name variable:
 
 <code>\<p\>Hello, {{name}}!\</p\></code>
 
+
+Check your browser. Can you see it?
+
 ***
 
 <b>About</b>
 
-It's high time to generate a route!
+Create another one route.
 
 In your terminal type:
 
@@ -169,8 +182,48 @@ Or for short:
 
 <code>ember g route about</code>
 
-Look at the output. We've created: about.js route handler inside routes folder, about.hbs template inside templates and about-test.js outside app folder but inside tests/unit/routes. Aber warte! Die Gesichte ist noch nicht zu Ende! We've updated also router.js file inside app folder. Open router.js file and peek!
+Look at the output. We've created: about.js route handler inside routes folder, about.hbs template inside templates and about-test.js outside app folder but inside tests/unit/routes.
+
+Aber warte! Die Gesichte ist noch nicht zu Ende! We've updated also router.js file inside app folder.
+
+Open router.js file and peek!
 
 <code>Router.map(function() { this.route('about'); });</code>
 
-That's great!
+***
+
+<b>About - one more time</b>
+
+Open about.hbs template.
+
+Here you can add whatever you want. Really!
+
+You can start adding h2 tag:
+
+<code>\<h2\>About me\</h2\></code>
+
+Now maybe a paragraph?
+
+<code>\<p\>I like Ember.js!\</p\></code>
+
+Why not add your own avatar?
+
+<code>\<img src="http://www.gravatar.com/avatar/f7e4cd2e6ef114ebc5c0d4250c278e6b?s=200" alt="Image not found! :/"\></code>
+
+I've added my own Gravatar but you can add whatever you want.
+
+***
+
+<b>Links</b>
+
+Now it's time to create links.
+
+Open index.hbs template and add handlebar:
+
+<code>{{#link-to "about"}}About{{/link-to}}</code>
+
+Do the same with about.hbs template:
+
+<code>{{#link-to "index"}}Home{{/link-to}}</code>
+
+That's it! C'est tres simple, n'est pas?
