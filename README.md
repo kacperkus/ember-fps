@@ -127,7 +127,7 @@ Now it's time to spend a few minutes and learn something about MVC (Model View C
 
 ***
 
-<b>Your first app</b>
+<b>Hello!</b>
 
 Now open app/templates/application.hbs file.
 
@@ -154,3 +154,23 @@ Create another div outside the previous:
 And inside it add a paragraph with name variable:
 
 <code>\<p\>Hello, {{name}}!\</p\></code>
+
+***
+
+<b>About</b>
+
+It's high time to generate a route!
+
+In your terminal type:
+
+<code>ember generate route about</code>
+
+Or for short:
+
+<code>ember g route about</code>
+
+Look at the output. We've created: about.js route handler inside routes folder, about.hbs template inside templates and about-test.js outside app folder but inside tests/unit/routes. Aber warte! Die Gesichte ist noch nicht zu Ende! We've updated also router.js file inside app folder. Open router.js file and peek!
+
+<code>Router.map(function() { this.route('about'); });</code>
+
+That's great!
