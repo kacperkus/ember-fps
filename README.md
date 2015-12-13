@@ -7,6 +7,7 @@ This tutorial provides an introduction to the Ember.js - a framework for creatin
 * HTML
 * CSS
 * JavaScript
+
 It would be great if you know something about an ECMAScript 6 syntax. That's the newest standard of JavaScript and our framework uses it.
 
 ***
