@@ -123,4 +123,4 @@ Everything works!
 
 Now it's time to spend a few minutes and learn something about MVC (Model View Controller) in Ember. If you know Ruby on Rails, make yourself at home!
 
-<a href="http://guides.emberjs.com/v2.2.0/getting-started/ember-cli/">Core Concepts</a>
+<a href="http://guides.emberjs.com/v2.2.0/getting-started/core-concepts"/>Core Concepts</a>
