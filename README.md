@@ -59,8 +59,64 @@ If you had to install Ember with sudo, you'll probably have to use it also with 
 
 If you see something like:
 <code>version: 1.13.13</code>
-or just
+or just:
 <code>version: 2.2.0</code>
 it's OK.
 
 Now let's create our first Ember app!
+
+***
+
+<b>Creating an app</b>
+
+Open your terminal and type:
+
+<code>ember new my-first-app</code>
+
+Instead of [my-first-app] you can type whatever you want. Sure!
+
+Wait a minute. Ember works hard for you!
+
+If you see something like:
+
+<code>Successfully initialized git.</code>
+
+<code>Installing packages for tooling via npm...</code>
+
+<code>Installed packages for tooling via npm.</code>
+
+<code>Installed browser packages via Bower.</code>
+
+Congratulations! You've just created your first Ember app!
+
+If something went wrong check if you've got installed git package. Maybe Bower doesn't work? Then try type:
+
+<code>bower install</code>
+
+Bower is package manager for the web, but since it's a user command, it doesn't require sudo. If your OS sends you permission errors when using bower without sudo, run it with --allow-root option:
+
+<code>sudo bower install --allow-root</code>
+
+***
+
+<b>Running server</b>
+
+Now open my-first-app folder:
+
+<code>cd my-first-app</code>
+
+And run Ember server:
+
+<code>ember server</code>
+
+Open your browser and type:
+
+<code>http://localhost:4200/</code>
+
+4200 is the default port for Ember server.
+
+If you see:
+
+<code>Welcome to Ember</code>
+
+Everything works!
