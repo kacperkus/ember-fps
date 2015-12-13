@@ -30,7 +30,7 @@ And if you're into Arch:
 
 <code>pacman -S nodejs npm</code>
 
-Node.js is a JavaScript runtime. Ember (like many other web app frameworks and libraries ) requires Node for working. npm is Node's package ecosystem. It works similarly to apt or aptitude in Debian but is dedicated to deal with web apps' dependencies.
+Node.js is a JavaScript runtime. Ember (like many other web app frameworks and libraries) requires Node for working. npm is Node's package ecosystem. It works similarly to apt or aptitude in Debian but is dedicated to deal with web apps' dependencies.
 
 Now watch carefully! We've installed nodejs from package called (sic!) nodejs, but we want Ember to work with <b>Node</b> app. Ember would be confused if it's looking for Node and can't find it. That's because Node binary's not on your $PATH. Let's change a symlink to solve that!
 
