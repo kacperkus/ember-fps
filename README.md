@@ -124,3 +124,33 @@ Everything works!
 Now it's time to spend a few minutes and learn something about MVC (Model View Controller) in Ember. If you know Ruby on Rails, make yourself at home!
 
 <a href="http://guides.emberjs.com/v2.2.0/getting-started/core-concepts"/>Core Concepts</a>
+
+***
+
+<b>Your first app</b>
+
+Now open app/templates/application.hbs file.
+
+Between h2 tags there is a "Welcome to Ember" string. Replace it with your own name.
+
+Go back to your browser. Did you see it? Our app has auto-refreshed and now you can see your name. That's great, isn't it?
+
+Add something more. Create new div (you can use HTML syntax as well as CSS class/id keyword):
+
+<code>\<div class="namespace"\>\</div></code>
+
+And create a new label inside that div:
+
+<code>\<label\>Name:\</label\></code>
+
+Now we'll be using handlebar syntax. Watch carefully!
+
+<code>{{input type="text" value=name placeholder="Enter your name"}}</code>
+
+Create another div outside the previous:
+
+<code>\<div class="hello"\>\<div\></code>
+
+And inside it add a paragraph with name variable:
+
+<code>\<p\>Hello, {{name}}!\</p\></code>
