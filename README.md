@@ -227,3 +227,27 @@ Do the same with about.hbs template:
 <code>{{#link-to "index"}}Home{{/link-to}}</code>
 
 That's it! C'est tres simple, n'est pas?
+
+***
+
+<b>Styling</b>
+
+Our (really) simple app is ready, but for now looks a little bit raw, doesn't it? Let's change that!
+
+You can add your own CSS to app.css file inside styles folder (app/styles/app.css).
+
+If you're comfortable with Bootstrap you can install it using:
+
+<code>bower install bootstrap</code>
+
+Or even simpler - with <a href="https://github.com/kaliber5/ember-bootstrap">ember-bootstrap</a> addon.
+
+***
+
+That's it for now! Don't forget to check http://guides.emberjs.com for more!
+
+***
+
+Any questions?
+
+Check out my Twitter! @kacper_kus
